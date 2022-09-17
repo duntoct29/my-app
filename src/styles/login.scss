@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+$fontLogin: 'Reem Kufi Fun', sans-serif;
+$bgr:#161853;
+$text:#EC255A;
+$bgr_hover:#3d43b0c7;
+$text_hover:#FAEDF0;
+.Login{
+       justify-items: center;
+       text-align: center;
+       justify-content: center;
+       display: flex;
+       height: 100%;
+       form{
+          background-color: $bgr;
+           margin-top: 12vh;
+           padding-top: 2vh;
+           height: 60vh;
+           border-radius: 10px;
+           h1{
+              font-family: $fontLogin;
+              font-size: 45px;
+              color: white;
+              pointer-events: none;
+           }
+           .form-group{
+               margin: 20px 50px;
+               position: relative;
+               label{
+                position: absolute;
+                padding: 0px 5px;
+                left:5px;
+                top:11%;
+                pointer-events: none;
+                transition: all 0.3s ease-in-out;
+                font-size: 18px;
+                color:$bgr_hover;
+                font-family: $fontLogin;
+               }
+               input{
+                    width: 250px;
+                    height: 30px;
+                    border: 2px solid $bgr_hover ;
+                    border-radius: 10px;
+               }
+           }
+           button{
+                  margin-top: 20px;
+                  width: 220px;
+                  height: 45px;
+                  border-radius: 10px;
+                  font-family: $fontLogin;
+                  font-size: 20px;
+                  background: linear-gradient(150deg,$text,$bgr_hover);
+                  color: white;
+                  cursor: pointer;
+                  border-color: $text_hover;
+           }
+           .forgetPassword{
+            margin-top: 20px;
+            li{
+                list-style: none;
+                margin: 5px;
+                margin-bottom: 7px;
+                a{
+                    text-decoration: none;
+                    color: $text_hover;
+                    font-family: $fontLogin;
+                }
+                :hover{
+                     color: red;
+                }
+            }
+           }
+
+       }
+}
+.form-group input:focus{
+    border-color: $bgr;
+}
+.form-group input:focus+label,
+.form-group input:valid+label {
+    transform: translateY(-24px);
+    font-size: 15px;
+    color: orange;
+}
+.submitLogin:hover{
+    color: rgba(255, 255, 255, 0.473);
+    border-color: #faedf094;
+}

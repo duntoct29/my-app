@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+$fontCreate: 'Reem Kufi Fun', sans-serif;
+$bgr:#161853;
+$text:#EC255A;
+$bgr_hover:#3d43b0c7;
+$text_hover:#FAEDF0;
+.CreateAccount{
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    form{
+          background-color: $bgr;
+           margin-top: 7vh;
+           padding-top: 2vh;
+           height: 78vh;
+           border-radius: 10px;
+           h1{
+            font-family: $fontCreate;
+            font-size: 45px;
+            color: $text_hover;
+            pointer-events: none;
+         }
+         .form-group-c{
+            margin: 20px 50px ;
+            position: relative;
+            label{
+             position: absolute;
+             padding: 0px 5px;
+             left:5px;
+             top:11%;
+             pointer-events: none;
+             transition: all 0.3s ease-in-out;
+             font-size: 18px;
+             color:$bgr_hover;
+             font-family: $fontCreate;
+            }
+            input{
+                margin: 3px;
+                 width: 250px;
+                 height: 30px;
+                 border: 2px solid rgba(0, 0, 0, 0.447) ;
+                 border-radius: 10px;
+            }
+        }
+        .Create{
+            margin-top: 8px;
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            font-family: $fontCreate;
+            font-size: 20px;
+            background: linear-gradient(150deg,$text,$bgr_hover);
+            border-color: $text_hover;
+            color: white;
+            cursor: pointer;
+        }
+        .protectOTP{
+            transform: translateY(-15px);
+            .OTP{
+                margin:0;
+                width: 100px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: $text;
+                p{
+                    font-family: $fontCreate;
+                    font-size: 20px;
+                    color: $text_hover;
+                    cursor: pointer;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+   
+        .login{
+            margin-top: 10px;
+                a{
+                    text-decoration: none;
+                    color: $text_hover;
+                    font-family: $fontCreate;
+                }
+                :hover{
+                     color: red;
+                }
+        }
+    }
+}
+.form-group-c input:focus{
+    border-color: blue;
+}
+.form-group-c input:focus+label,
+.form-group-c input:valid+label{
+    transform: translateY(-24px);
+    font-size: 15px;
+    color: orange;
+}
+.protect input:focus{
+    border-color: blue;
+}
+.protect input:focus+label,
+.protect input:valid+label{
+    transform: translateY(-24px);
+    font-size: 15px;
+    color: orange;
+}
+.Create :hover{
+    color: rgba(255, 255, 255, 0.473);
+}
